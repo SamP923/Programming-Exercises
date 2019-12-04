@@ -1,0 +1,1 @@
+print "\tCreate a Python program on repl.it with the title \'Story Time.\'\nThe program should use a single print statement to type a three sentence story.\nEach sentence should appear in the console on its own line."
