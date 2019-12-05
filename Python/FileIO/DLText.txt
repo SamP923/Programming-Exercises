@@ -1,0 +1,5 @@
+Full Name: bruh
+Eye Color: blue
+Hair Color: brown
+Height : 4
+Weight: 24
