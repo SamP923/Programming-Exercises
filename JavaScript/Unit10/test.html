@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>
+</title>
+</head>
+
+<body>
+<script type="text/javascript">
+function friend(name,job,born)
+{
+this.name=name;
+this.job=job;
+this.born=born;
+}
+var Wall_E=new friend("Wall-E","trash collector",2105);
+friend.prototype.bestfriend=null;
+Wall_E.bestfriend="EVE";
+document.write("My new friend is "+Wall_E.name+", born in "+Wall_E.born+". "+"He is a"+Wall_E.job+". "+"His best friend is "+Wall_E.bestfriend+".");
+</script>
+</body>
+</html>

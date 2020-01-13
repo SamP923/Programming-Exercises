@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>My JavaScript Site - Page1</title>
+<link rel="stylesheet" type="text/css" media="all" href="layout.css" />
+</head>
+<body id="home">
+
+<script type="text/javascript" src="page1_external.js">
+</script>
+	<div id="wrapper">
+
+		<div id="header">
+<img src="banner.png"><br>
+
+		</div>
+
+		<div id="navbar">
+			<ul class="nav">
+				<li>
+<a href="index.html">Home</a>
+</li>
+
+				<li id="nav-page1">
+<a href="#">Misc.</a></li>
+				<li><a href="page2.html">Conversions</a></li>
+				<li><a href="page3.html">Clock</a>
+</li>
+				
+<li><a href="page4.html">Prime Numbers</a></li>
+				<li><a href="page5.html">Horoscopes</a></li>
+			</ul>
+			<div id="navfill">
+
+			</div>
+
+		</div>
+
+		<div id="content-wrapper">
+
+			<div id="content-inner">
+				<h2>Miscellaneous</h2>
+
+			<br />
+				
+			</div>
+
+		</div>
+
+		<div id="content">
+			<div id="eulers">
+			<h2>Euler's Number</h2>
+			Do you know what the value of e is?
+			<input type="button" id="eulersnumber" value="Click to find out!" onclick="euler()"/>
+			</div><br><br>
+			
+			<div id="hiddensymbols">
+				<h2>Hidden Symbols</h2>
+				Try to hide an @ symbol!<br><br>
+				<textarea rows="10" cols="100" id="textarea">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</textarea><br><br>
+				<input type="button" onclick="checktext()" value="Submit" />
+			</div>
+
+		</div>
+	</div>
+
+	<div class="footer">
+ 		<input type="button" onclick="window.history.back()" value="back">
+		<input type="button" onclick="window.history.forward()" value="forward">
+		<br><input type="button" onclick="alert( history.length )" value="history length">
+	</div> 
+</body>
+
+</html>

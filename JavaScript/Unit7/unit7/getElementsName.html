@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>getElementsByName()</title>
+<script type="text/javascript">
+function getElements()
+  {
+  var x=document.getElementsByName("textbox");
+  alert(x.length);
+  }
+</script>
+</head>
+
+<body>
+<input name="textbox" type="text" size="20" /><br /><br />
+<input name="emptybox" type="text" size="20" /><br /><br />
+<input name="textbox" type="text" size="20" /><br /><br />
+<input name="emptybox" type="text" size="20" /><br /><br />
+<input name="textbox" type="text" size="20" /><br /><br />
+<input type="button" onclick="getElements()" value="How many elements named 'textbox'?" />
+</body>
+</html>
+
+

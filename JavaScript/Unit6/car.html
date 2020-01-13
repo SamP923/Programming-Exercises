@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Creating Objects
+</title>
+</head>
+
+<body>
+<script type="text/javascript">
+function car(color, engine, seats, make){
+this.color = color;
+this.engine = engine;
+this.seats = seats;
+this.make = make;
+}
+
+var my_car = new car("red", "V-8", "leather", "Ferrari");
+var your_car = new car("black", "V-6", "leather", "Honda");
+
+var carmake_1 = my_car.make;
+var carcolor_1 = my_car.color;
+var carmake_2 = your_car.make;
+var carcolor_2 = your_car.color;
+
+window.alert("I have a " + carcolor_1 + " " + carmake_1 );
+window.alert("You have a " + carcolor_2 + " " + carmake_2 );
+
+</script>
+</body>
+</html>

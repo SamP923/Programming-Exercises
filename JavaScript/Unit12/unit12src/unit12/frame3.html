@@ -1,0 +1,31 @@
+<html>
+<head>
+</head>
+
+<body>
+<script type="text/javascript">
+document.write("Hi, "+top.left_side.thename+"!<br />");
+</script>
+Now I'd like to get your favorite food. Please enter it below:
+<br /><br />
+<form onsubmit="return more_info();">
+<label for="yourname">Your Name:</label>
+<input type="text" id="yourname" size="25" />
+<br /><br />
+<label for="yourfood">Favorite Food:</label>
+<input type="text" id="yourfood" size="25" />
+<br /><br />
+<input type="submit" value="Continue" />
+</form>
+<script type="text/javascript">
+var tn = document.getElementById("yourname");
+tn.value = top.left_side.thename
+function more_info() {
+var fd = document.getElementById("yourfood");
+top.left_side.thefood= fd.value;
+self.location="frame4.html";
+return false;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>My JavaScript Site - Page4</title>
+
+<link rel="stylesheet" type="text/css" media="all" href="layout.css" />
+</head>
+<body id="home">
+
+<script type="text/javascript" src="primecheck_external.js">
+</script>
+	<div id="wrapper">
+ 
+		<div id="header"><img src="banner.png">
+<br></div>
+		<div id="navbar">
+
+			<ul class="nav">
+				<li><a href="index.html">Home</a></li>
+
+				<li><a href="page1.html">Misc.</a></li>
+
+				<li>
+<a href="page2.html">Conversions</a>
+</li>
+				<li><a href="page3.html">Clock</a></li>
+				<li id="nav-page4"
+><a href="#">Prime Numbers</a></li>
+
+				<li>
+<a href="page5.html">Horoscopes</a>
+</li>
+			</ul>
+
+			<div id="navfill"></div>
+
+		</div>
+		<div id="content-wrapper">
+			<div id="content-inner">
+
+				<h2>Prime Number Check</h2><br />
+			</div>
+		</div>
+<br>
+		<div id="content">
+		Enter a 5 digit number and find out if it's prime! 
+		<br>Note, it might take a couple seconds to calculate.
+		<br><br>
+		<input type="text" id="primecheckfield">
+		<input type="submit" onclick="checknumber()" value="Check">
+		
+		<br><br>
+		<div id="outputPrime"></div>
+		</div>
+	</div>
+
+	<div class="footer">
+ 		<input type="button" onclick="window.history.back()" value="back">
+		<input type="button" onclick="window.history.forward()" value="forward">
+		<br><input type="button" onclick="alert( history.length )" value="history length">
+	</div> 
+</body>
+
+</html>

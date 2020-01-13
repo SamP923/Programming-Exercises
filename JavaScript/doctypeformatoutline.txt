@@ -1,0 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>
+</title>
+</head>
+
+<body>
+<script type="text/javascript">
+</script>
+ <div class="tumblr-post" data-href="https://embed.tumblr.com/embed/post/dJGqPRYwBV_ypFez2rCw5w/169743509162" data-did="d9ba7996e8dd5ef74763ddc786929b5758584e46"><a href="http://scienceprofessorquotes.tumblr.com/post/169743509162/if-i-lose-this-bet-ill-eat-my-hat">http://scienceprofessorquotes.tumblr.com/post/169743509162/if-i-lose-this-bet-ill-eat-my-hat</a></div>  <script async src="https://assets.tumblr.com/post.js"></script>
+</body>
+</html>

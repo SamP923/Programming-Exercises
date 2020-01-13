@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Prototype Property of String Object</title>
+</head>
+
+<body>
+<script type="text/javascript">
+function character(name)
+{
+this.name=name;
+}
+var camp_halfblood=new character("Percy Jackson");
+character.prototype.quality=null;//The custom object uses the prototype property
+camp_halfblood.quality="demigod";
+alert(camp_halfblood.name+" is a "+camp_halfblood.quality+".");
+
+</script>
+</body>
+</html>
+

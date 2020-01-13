@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Content Change
+</title>
+</head>
+
+<body>
+<h1><span id="h1"><strong>The Original Content</span></strong></h1>
+<input type="button" id="modify" onclick="modifyContent()" value="Modify HTML content"/>
+<input type="button" id="delete" onclick="deleteContent()" value="Delete HTML content"/>
+
+<script type="text/javascript">
+function modifyContent()
+{
+	document.getElementById("h1").innerHTML = "The New Content";
+}
+
+function deleteContent()
+{
+	document.getElementById("h1").innerHTML = " ";
+}
+
+</script>
+</body>
+</html>

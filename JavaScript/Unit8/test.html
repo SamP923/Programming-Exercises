@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<script type="text/javascript">
+function prompt_confirm()
+{
+var fname=prompt("enter the password:","Your name");
+if (fname == "password"){
+window.open("http://www.cty.jhu.edu","myWindow","width = 500, height = 500");
+}
+else {
+alert("You entered the wrong password!");
+}
+}
+</script>
+</head>
+<body>
+<input type="button" onclick="prompt_confirm()" value="Display a prompt box" />
+</body>

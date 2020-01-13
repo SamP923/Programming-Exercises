@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Write() Method VS WriteIn() Method</title>
+</head>
+
+<body>
+<p style="font-weight:bold;">Note that write() does NOT add a new line after each statement in the source code:</p>
+<pre> <!--We use the <pre> element to show the computer code in the browser-->
+<script type="text/javascript">
+document.bgColor = "orange";
+document.write("<strong>Hello World!</strong>");
+document.write("<strong> Have a nice day!</strong>");
+</script>
+</pre>
+
+
+<p style="font-weight:bold">Note that writeln() adds a new line after each statement in the source code:</p>
+<pre> <!--We use the <pre> element to show the computer code in the browser-->
+<script type="text/javascript">
+document.writeln("Hello World!");
+document.writeln("Have a nice day!");
+</script>
+</pre>
+
+<button type="button" style="font:bold 20px Arial,san-serif;" 
+onclick="window.alert('It puts\n lines of text\n on separate \n lines!');"> What does the new line character do for alert, confirm, and prompt boxes?</button>
+
+</body>
+</html>

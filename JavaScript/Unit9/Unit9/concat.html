@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>concat() Method</title>
+</head>
+
+<body>
+<script type = "text/javascript">
+var north_america = new Array("US","Canada","Mexico");
+var south_america = new Array("Brazil","Argentina","Chile");
+document.write("Concatenating the contents of south_america to north_america: ");
+var americas = north_america.concat(south_america);
+document.write("<br>"+americas+"<br><br>");
+document.write("Concatenating the contents of north_america to south_america: ");
+var americas1 = south_america.concat(north_america);
+document.write("<br>"+americas1+"<br><br>");
+var asia = new Array("India","China","Japan");
+var africa = new Array("Egypt","South Africa","Sudan");
+document.write("Concatenating the contents of south_america, asia, africa to north_america: ");
+var americas2 = north_america.concat(south_america,asia,africa);
+document.write("<br>"+americas2+"<br>");
+</script>
+</body>
+</html>

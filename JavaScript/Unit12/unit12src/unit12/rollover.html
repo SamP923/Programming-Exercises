@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Image Rollover</title>
+<script type = "text/javascript">
+function changeCap(){
+	document.getElementById('caption').innerHTML = 'Too slow, how about here?';
+}
+function changeCapback(){
+	document.getElementById('caption').innerHTML = 'Click if you would like to go here!';
+}
+</script>
+</head>
+
+<body>
+<a href="#" onmouseover="document.img1.src='deathvalley_sand_dunes.jpg'; changeCap();" onmouseout="document.img1.src='morning_glory_pool.jpg'; changeCapback();">
+<img src="morning_glory_pool.jpg" name="img1" width="300" height="216" border="0" alt="Morning Glory image"/></a>
+<br />
+<p id="caption" style="font:20px arial,sans-serif;">Click if you would like to go here!<p>
+</body>
+</html>

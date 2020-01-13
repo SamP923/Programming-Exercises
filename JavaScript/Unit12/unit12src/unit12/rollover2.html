@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Rollover to Change Different Image</title>
+</head>
+
+<body>
+<script type="text/javascript">
+var im1 = document.getElementById("pic1");
+var im2 = document.getElementById("pic2");
+
+im1.onmouseover = function(){ im2.src="deathvalley_sand_dunes2.jpg"};
+im1.onmouseout = function(){ im2.src="deathvalley_sand_dunes.jpg"};
+</script>
+<h1> Move your mouse over first image to change second one!</h1>
+<a href="#" onmouseover="document.getElementById('pic2').src='morning_glory_pool.jpg';><img src="morning_glory_pool.jpg" id="pic1" border="0" /></a>
+<br /><br />
+<a href="#"><img src="deathvalley_sand_dunes.jpg" id="pic2" border="0" /></a>
+</body>
+</html>

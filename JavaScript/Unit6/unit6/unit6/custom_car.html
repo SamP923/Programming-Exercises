@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Creating a Customized Object</title>
+</head>
+
+<body>
+<script type = "text/javascript">
+function car(color,engine,seats,make) {
+	this.color = color;
+	this.engine = engine;
+	this.seats = seats;
+	this.make = make;
+	}
+
+var my_car = new car("red","V-8","leather","Ferrari");
+var your_car = new car("black","V-6","cloth","Honda");
+var custom_car = new car(my_car.color,your_car.engine,my_car.seats,your_car.make);
+
+var custom_carmake = custom_car.make;
+var custom_carcolor = custom_car.color;
+
+window.alert("I have a "+custom_carcolor+" "+custom_carmake);
+</script>
+</body>
+</html>

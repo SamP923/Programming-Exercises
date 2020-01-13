@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Hide an @ symbol!
+</title>
+</head>
+
+<body>
+<script type="text/javascript">
+function checktext()
+{
+	var textvalue = document.getElementById("textarea").value;
+	var symbolPos = textvalue.indexOf("@");
+	if ( symbolPos >= 0 )
+	{
+		alert( "I found your @ symbol. You wrote " +  textvalue.length + " characters. The @ symbol was character number " + symbolPos + "." );
+	}
+	else {
+		alert("You did not write an @ symbol. Can't fool me that easily!");
+	}
+}
+</script>
+<textarea rows="4" cols="50" id="textarea">
+Try to hide an @ symbol!
+</textarea><br><br>
+<input type="button" onclick="checktext()" value="Submit" />
+</body>
+</html>

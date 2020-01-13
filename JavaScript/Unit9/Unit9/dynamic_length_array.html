@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Dynamic Length of Array </title>
+</head>
+
+<body>
+<script type = "text/javascript">
+var car = new Array("Mercedes","Volvo","Lexus","Toyota","Honda"); /* Here array length starts at 5*/
+document.write("Initial length of the array is: "+car.length+"<br /><br />");
+
+car[5] = "Porsche"; /* Here we append two more elements with values thereby increasing the array length*/
+car[6] = "Ferrari";
+document.write("New length of the array is: "+car.length+"<br /><br />");
+document.write("Elements of the array are:<br/>");
+
+for(var i = 0; i < car.length; i++) {
+document.write("Car "+(i+1)+ " is "+car[i]+"<br />");
+}
+</script>
+</body>
+</html>

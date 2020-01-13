@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Number object - MAX_VALUE & MIN_VALUE property</title>
+</head>
+
+<body>
+<script type = "text/javascript">
+var num1 = window.prompt("Enter the first number");
+var num2 = window.prompt("Enter the second number");
+var max_num = num1*num2;
+if (max_num > Math.MAX_VALUE) {
+  window.alert("Number is positive infinity");
+}
+else {
+ if (max_num < Math.MIN_VALUE){
+	window.alert("Number is negative infinity");
+ }
+ else {
+        window.alert("Number lies within the specified range");
+ }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>New Doc with Open()</title>
+<script type="text/javascript">
+function createDoc()
+  {
+  var doc=document.open("text/html","replace");
+  var txt="<html><body style=\"background-color:#0099FF\"><br /><br /><br /><br /><br /><h1 align=\"center\">Learning about Object methods is fun!</h1></body></html>";
+  doc.write(txt);
+  doc.close();
+  }
+</script>
+</head>
+
+<body>
+<form>
+<input type="button" value="Create New document" onclick="createDoc()" />
+</form>
+</body>
+</html> 

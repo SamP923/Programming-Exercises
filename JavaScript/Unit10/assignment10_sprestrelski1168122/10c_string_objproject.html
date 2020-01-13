@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>My String Object Project
+</title>
+</head>
+
+<body>
+<script type="text/javascript">
+function pigLatinize( word )
+{
+	var vowels= /^[aeiou]/;
+	var specialChars = /\W$/;
+	var edited;
+
+	if ( word.search( specialChars ) !== -1 )
+	{
+		if ( word.search( vowels ) == -1 )
+		{
+			edited = word.substring(1, word.length - 1) + word.substring(0, 1) + "ay" + word.substring( word.length - 1);
+		}
+		else
+		{
+			edited = word.substring(0, word.length-1) + "ay" + word.substring( word.length-1 );
+		}
+	}
+	else
+	{
+		if ( word.search( vowels ) == -1 )
+		{
+			edited = word.substring(1) + word.substring(0,1) + "ay ";
+		}
+		else
+		{
+			edited = word + "ay";
+		}
+	}
+	
+	return edited;
+}
+
+function translateInput()
+{
+	var textvalue = document.getElementById("userInput").value;
+	document.getElementById("translatorOutput").innerHTML = " ";
+	var arr = textvalue.split(" ");
+	var holder = "";
+	for ( i = 0; i < arr.length; i++ )
+	{	
+		var word = pigLatinize( arr[i] );
+		arr[i] = word;
+	}
+	document.getElementById("translatorOutput").innerHTML = arr.join(" ");
+}
+</script>
+
+<h1>Pig Latin Translator</h1>
+<p>Ever heard of Pig Latin? Easily translate standard English into stylish Pig Latin so you can impress your friends.</p>
+
+<textarea rows="4" cols="50" id="userInput">Your text goes here!</textarea>
+
+<br/>
+
+<input type="button" onclick="translateInput()" value="Translate"/>
+
+<br/><br/>
+
+<textarea rows="4" cols="50" id="translatorOutput"></textarea>
+
+</body>
+</html>

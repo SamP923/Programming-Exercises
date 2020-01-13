@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>Using the close() Method</title>
+<script>
+function openwin()
+{
+ my_window = window.open("",
+    "mywindow","scrollbars=1,width=350,height=150");
+my_window.document.write('<h1 style="color:green">Howdy!<br /><br /><br />Okay, you can close me now.</h1>');  
+}
+
+function closewin()
+{
+ if(false == my_window.closed)
+ {
+    my_window.close();
+ }
+ else
+ {
+    alert('My Window is already closed!');
+ }
+}
+</script>
+</head>
+
+<body>
+<button type="button" onclick="openwin()">Open My Window</button>
+<button type="button" onclick="closewin()">Close My Window</button>
+</body>
+</html> 

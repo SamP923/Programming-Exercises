@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>innerHTML Property II</title>
+<style type="text/css">
+p {font-family:fantasy,cursive; font-size:50px; font-weight:bold; font-style:italic; text-transform:uppercase; color:blue; background-color:#e0c040; border-width:1px; border-style:dashed; border-color:blue;
+}
+</style>
+</head>
+
+<body>
+<script type="text/javascript">
+function showTxt(){
+  var input = document.getElementById('input').value;
+  document.getElementById('userTxt').innerHTML = input;
+}
+</script>
+
+<input type="input" size="60" id="input" onkeyup="showTxt()" value="Enter text here..." />
+
+<p id="userTxt"></p> 
+</body>
+</html>

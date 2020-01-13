@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+
+<body>
+I'd like to get your name. Please enter it below.
+<br />
+<form onsubmit="return store_info();">
+<label for="yourname">Your Name:</label>
+<input type="text" id="yourname" size="25" />
+<br /><br />
+<input type="submit" value="Continue" />
+</form>
+<script type="text/javascript">
+function store_info() {
+var yn = document.getElementById("yourname").value;
+top.left_side.thename= yn;
+self.location="frame3.html";
+return false;
+}
+</script>
+</body>
+</html>

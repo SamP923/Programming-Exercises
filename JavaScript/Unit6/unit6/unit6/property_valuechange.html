@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Property Value Change</title>
+</head>
+
+<body>
+<script type = "text/javascript">
+function car(color,engine,seats,make) {
+	this.color = color;
+	this.engine = engine;
+	this.seats = seats;
+	this.make = make;
+	}
+
+var my_car = new car("red","V-8","leather","Ferrari");
+var your_car = new car("black","V-6","cloth","Honda");
+
+var carmake_1 = my_car.make;
+var carcolor_1 = my_car.color;
+
+var carmake_2 = your_car.make;
+var carcolor_2 = your_car.color;
+
+
+window.alert("I have a "+carmake_1+" "+carcolor_1);
+window.alert("You have a "+carmake_2+" "+carcolor_2);	
+
+my_car.color = "blue";
+my_car.make = "Toyota";
+
+window.alert("I have traded in my old car for a "+my_car.color+" "+my_car.make);	
+</script>
+</body>
+</html>

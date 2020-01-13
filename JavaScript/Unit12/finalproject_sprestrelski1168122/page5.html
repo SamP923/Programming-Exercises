@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>My JavaScript Site - Page5</title>
+
+<link rel="stylesheet" type="text/css" media="all" href="layout.css" />
+</head>
+<body id="home">
+
+<script type="text/javascript" src="page5_external.js">
+</script>
+	<div id="wrapper">
+ 
+		<div id="header"><img src="banner.png">
+<br></div>
+		<div id="navbar">
+
+			<ul class="nav">
+				<li><a href="index.html">Home</a></li>
+
+				<li><a href="page1.html">Misc.</a></li>
+
+				<li>
+<a href="page2.html">Conversions</a>
+</li>
+				<li><a href="page3.html">Clock</a></li>
+				<li><a href="page4.html">Prime Numbers</a></li>
+
+				<li id="nav-page5">
+<a href="#">Horoscopes</a>
+</li>
+			</ul>
+
+			<div id="navfill"></div>
+
+		</div>
+		<div id="content-wrapper">
+			<div id="content-inner">
+
+				<h2>Horoscopes</h2><br />
+			</div>
+		</div>
+<br>
+		<div id="content">
+		Enter your birthday to learn about your horoscope!<br><br>
+		Month: <input type="text" id="month" size="4">
+		Day: <input type="text" id="day" size="4">
+		<br><br>
+		<input type="button" value="Go!" onclick="calculate()">
+		</div>
+	</div>
+
+
+	<div class="footer">
+		Can be used when the external window is open. <br>
+		<input type="button" onclick="closewin()" value="Manually close the window.">
+		<input type="button" onclick="nameRetrieval()" value="external window name">
+		<br><br>
+ 		<input type="button" onclick="window.history.back()" value="back">
+		<input type="button" onclick="window.history.forward()" value="forward">
+		<br><input type="button" onclick="alert( history.length )" value="history length">
+		<input type="button" onclick="alert( window.top )" value="location">
+	</div> 
+</body>
+
+</html>

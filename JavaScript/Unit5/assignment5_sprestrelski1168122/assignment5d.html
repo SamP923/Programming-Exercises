@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Assignment 5d
+</title>
+</head>
+
+<body>
+<form>
+Write something here:
+<input type="text" id="textField"> 
+<span id="formatReminder"></span>
+</form>
+<script type="text/javascript">
+function secret_message()
+{
+	document.getElementById("formatReminder").innerHTML = "A wild secret message appeared!";
+}
+function erase_message()
+{
+	window.alert("The wild secret message fled.");
+	document.getElementById("formatReminder").innerHTML = "";
+}
+
+document.getElementById("textField").onfocus = secret_message;
+document.getElementById("textField").onblur = erase_message;
+
+</script>
+</body>
+</html>

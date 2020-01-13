@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Using the Prototype property for an Array </title>
+</head>
+<body>
+<script type = "text/javascript">
+Array.prototype.characteristic = "cool";
+var robot = new Array(4)
+robot[0] = "C-3PO";
+robot[1] = "Optimus Prime";
+robot[2] = "Wall-E";
+robot[3] = "Mega Man";
+
+window.alert(robot[1]+" is "+robot.characteristic+"!");
+
+var person = new Array();
+robot.characteristic = "Mega-smart"
+window.alert("This person is "+robot.characteristic+ " like "+robot[3]+"!");
+</script>
+</body>
+</html>

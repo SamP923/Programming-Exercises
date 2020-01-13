@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>splice() method</title>
+</head>
+
+<body>
+<script type="text/javascript">
+var myArray=new Array(1,2,3,4,5,6,7,8,9,10);
+var newArray= new Array();
+
+document.write("myArray is: "+myArray+"<br />");
+
+newArray = myArray.splice(5,1);//delete one item at the 5th index.
+document.write("From 5th index, deleted 1 element and returned in newArray.  myArray is now: "+myArray+"<br />");  // outputs: 1,2,3,4,5,7,8,9,10
+document.write("newArray is: "+newArray+"<br /><br /><br />"); // outputs 6
+
+
+myArray=[1,2,3,4,5,6,7,8,9,10];
+document.write("myArray is: "+myArray+"<br />");
+newArray = myArray.splice(5);//truncate the array at the 5th index.
+document.write("truncated myArray at 5th index is: "+myArray+"<br />");  // outputs: 1,2,3,4,5
+document.write("newArray is: "+newArray+"<br /><br /><br />"); // outputs 6,7,8,9,10
+
+
+myArray=[1,2,3,4,5,6,7,8,9,10];
+document.write("myArray is: "+myArray+"<br />");
+newArray = myArray.splice(1,8, 'blue', 'green');// cut out the middle and insert 'blue', and 'green'
+document.write("Removed from 1st index to 8th index and added 'blue', and 'green'. myArray is now: "+myArray+"<br />"); // outputs: 1,blue,green,10
+document.write("newArray is: "+newArray+"<br /><br /><br />"); // outputs 2,3,4,5,6,7,8,9
+
+
+myArray=[1,2,3,4,5,6,7,8,9,10];
+document.write("myArray is: "+myArray+"<br />");
+newArray = myArray.splice(5,0, 'green');// Insert without deleting.
+document.write("Inserted 'green'. myArray is now: "+myArray+"<br />");  // outputs: 1,2,3,4,5,green,6,7,8,9,10
+</script>
+</body>
+</html>
+
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+<head>
+
+<title>My JavaScript Site - Home</title>
+
+<link rel="stylesheet" type="text/css" media="all" href="layout.css" />
+
+</head>
+
+
+<script type="text/javascript" src="index_external.js">
+</script>
+<style>
+h1 {
+	font-size: 50px;
+	text-align: center;
+}
+
+#datediv {
+	font-size: 100px;
+	text-align: center;
+}
+#browserspecs {
+	font-size: 20px;
+	padding-top: 150px;
+	padding-bottom: 400px;
+	text-align: center;
+}
+	
+</style>
+<body id="home">
+
+	<div id="wrapper">
+
+		<div id="header">
+<img src="banner.png"><br></div>
+		<div id="navbar">
+			<ul class="nav">
+				<li id="nav-home"><a href="#">Home</a></li>
+
+				<li>
+<a href="page1.html">Misc.</a></li>
+				<li><a href="page2.html">Conversions</a></li>
+				<li><a href="page3.html">Clock</a>
+</li>
+				
+<li><a href="page4.html">Prime Numbers</a></li>
+				<li><a href="page5.html">Horoscopes</a></li>
+			</ul>
+
+			<div id="navfill"></div>
+		</div>
+		<div id="content-wrapper">
+			<div id="content-inner"><h2 id="welcome_msg">Welcome to my site!</h2>
+<br />
+
+			</div>
+		</div>
+		<div id="content">
+			<h1>Today's date is</h1>
+			<div id="datediv"></div>
+			<div id="browserspecs"></div>
+		</div>
+	</div>
+    
+	<div class="footer">
+ 		<input type="button" onclick="window.history.back()" value="back">
+		<input type="button" onclick="window.history.forward()" value="forward">
+		<br><input type="button" onclick="alert( history.length )" value="history length">
+	</div> 
+</body>
+
+</html>

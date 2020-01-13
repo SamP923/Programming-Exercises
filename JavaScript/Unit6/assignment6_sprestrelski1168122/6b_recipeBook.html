@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Recipe Book
+</title>
+</head>
+
+<body>
+<script type="text/javascript">
+
+function Recipe( n, i, p )
+{
+	name = n;
+	ingredients = i;
+	price = p;
+
+	describe( name, ingredients, price );
+}
+
+function describe( name, ingredients, price )
+{
+	document.write( "<h2>" + name + "</h2>" );
+	document.write( "<p>" + ingredients + "<br>$" + price + "<br></p>" );
+}
+
+var chocoCookies = new Recipe( "Chocolate Chip Cookies", "Flour, Butter, Sugar, Vanilla Extract, Salt, Baking Soda, Eggs, Chocolate Chips", 7.99 );
+
+var caesarSalad = new Recipe( "Caesar Sald", "Lettuce, Garlic, Mayonnaise, Anchovies, Egg, Croutons, Parmesan Cheese, Olive Oil", 12.99 );
+
+document.write( "Your browser type is " + navigator.appVersion + ".<br>" );
+
+</script>
+</body>
+</html>

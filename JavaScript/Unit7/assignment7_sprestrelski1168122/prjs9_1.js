@@ -1,0 +1,1 @@
+window.alert( document.getElementById("div1").title );

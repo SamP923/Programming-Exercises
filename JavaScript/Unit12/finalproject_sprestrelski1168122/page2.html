@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>My JavaScript Site - Page2</title>
+
+<link rel="stylesheet" type="text/css" media="all" href="layout.css" />
+</head>
+<body id="home">
+
+<script type="text/javascript" src="page2_external.js">
+</script>
+	<div id="wrapper">
+ 
+		<div id="header"><img src="banner.png">
+<br></div>
+		<div id="navbar">
+
+			<ul class="nav">
+				<li><a href="index.html">Home</a></li>
+
+				<li><a href="page1.html">Misc.</a></li>
+
+				<li id="nav-page2">
+<a href="#">Conversions</a>
+</li>
+				<li><a href="page3.html">Clock</a></li>
+				<li>
+<a href="page4.html">Prime Numbers</a></li>
+
+				<li>
+<a href="page5.html">Horoscopes</a>
+</li>
+			</ul>
+
+			<div id="navfill"></div>
+
+		</div>
+		<div id="content-wrapper">
+			<div id="content-inner">
+
+				<h2>Conversions</h2><br />
+			</div>
+		</div>
+
+		<div id="temperature">
+			<h2>Temperature Conversion</h1>
+			Celcius: <input type="text" id="celcius" size="10">
+			Farenheit: <input type="text" id="farenheit" size="10"><br><br>
+			<input type="button" onclick="convert()" value="Convert" />
+			<input type="button" onclick="clear_input()" value="Clear" />
+			<br><br>
+		</div>
+		
+		<div id="piglatintrans">
+			<h2>Pig Latin Translator</h2>
+			<p>Ever heard of Pig Latin? Easily translate standard English into stylish Pig Latin so you can impress your friends.</p>
+
+			<textarea rows="4" cols="50" id="userInput">Your text goes here!</textarea><br/>
+			<input type="button" onclick="translateInput()" value="Translate"/><br/><br/>
+			<textarea rows="4" cols="50" id="translatorOutput"></textarea>
+		</div>
+
+	</div>
+	<div class="footer">
+ 		<input type="button" onclick="window.history.back()" value="back">
+		<input type="button" onclick="window.history.forward()" value="forward">
+		<br><input type="button" onclick="alert( history.length )" value="history length">
+	</div>
+</body>
+
+</html>

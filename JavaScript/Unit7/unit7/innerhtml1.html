@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>innerHTML Property</title>
+<style>
+span {color:red};
+</style>
+</head>
+
+<body>
+<script type="text/javascript">
+function change(){
+	document.getElementById('yourname1').innerHTML = 'Fred Flintstone';
+	document.getElementById('yourname2').innerHTML = 'Elroy';
+	document.getElementById('image1').innerHTML = '<img src=f_flintstone.jpg></img>';
+	document.getElementById('image2').innerHTML = '<img src=elroy.jpg></img>';
+}
+</script>
+<h1>Welcome to the site <span id='yourname1'>Dude</span>!</h1>
+<div>
+<span id="image1"><span />
+</div>
+<h1>What's your favorite TV show <span id='yourname2'>Dude</span>?!</h1>
+<div>
+<span id="image2"><span />
+</div>
+<br />
+<br />
+<br />
+<input type='button' onclick='change()' value='Change'/>
+
+</body>
+</html>

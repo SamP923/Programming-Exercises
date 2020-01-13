@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Assignment 9e
+</title>
+</head>
+
+<body>
+<script type="text/javascript">
+var classes_list = new Array()
+classes_list["science"] = ["Harry", "Ron", "Hermione", "Dean", "Draco"];
+classes_list["engineering"] = ["Tony", "Steve", "Thor", "Natasha", "Clint", "Bruce" ];
+classes_list["chemistry"] = ["Wanda", "Pietro", "Loki", "Bucky", "Peter" ];
+classes_list["english"] = ["Percy", "Annabeth", "Grover", "Piper", "Jason"];
+
+for( var i in classes_list)
+{
+	document.write( i + " students:" + "<br>" );
+	classes_list[i].sort();
+	for ( var j = 0; j < classes_list[i].length; j++)
+	{
+		document.write( classes_list[i][j] +"<br>" );
+	}
+	document.write("<br>");
+}
+</script>
+</body>
+</html>
